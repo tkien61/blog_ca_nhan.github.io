@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Giới thiệu bản thân — Nguyễn Trung Kiên</title>
+  <style>
+    :root{
+      --blue: #0b84d6;
+      --orange: #ff6f1a;
+      --bg: #f7fbff;
+      --text: #0f172a;
+      --muted: #64748b;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Inter',sans-serif;
+    background:linear-gradient(180deg,#f7fbff,#fffaf6);
+    color:var(--text);}
+
+    header{
+      background:linear-gradient(90deg,var(--blue),var(--orange));
+      padding:20px 0;
+      text-align:center;
+      color:white;
+      box-shadow:0 4px 20px rgba(0,0,0,0.1)
+    }
+    header h1{font-size:28px;font-weight:700;margin-bottom:5px}
+    header p{font-size:16px;opacity:0.9}
+
+    main{max-width:900px;margin:40px auto;padding:0 20px;display:grid;gap:30px}
+    section{
+      background:white;
+      padding:25px;
+      border-radius:14px;
+      box-shadow:0 8px 30px rgba(0,0,0,0.06)
+    }
+
+    h3{
+      color:var(--orange);
+      margin-bottom:15px;
+      text-align:center;
+      font-size:20px;
+    }
+
+    .intro{
+      text-align:center;
+    }
+    .intro img{
+      width:150px;
+      height:150px;
+      border-radius:50%;
+      border:4px solid var(--blue);
+      object-fit:cover;
+      display:block;
+      margin:0 auto 15px;
+    }
+    .intro-text h2{
+      color:var(--blue);
+      font-size:22px;
+      margin-bottom:10px;
+      text-align:center;
+    }
+    .intro-text p{
+      color:var(--muted);
+      line-height:1.6;
+      text-align:center;
+    }
+
+    .personal-info p{
+      color:var(--muted);
+      line-height:1.6;
+      text-align:center;
+    }
+
+    .skills ul, .hobbies ul, .goals ul{
+      list-style:none;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:8px;
+      padding:0;
+    }
+    .skills li, .hobbies li, .goals li{
+      background:linear-gradient(90deg,rgba(11,132,214,0.1),rgba(255,111,26,0.1));
+      padding:10px;
+      border-radius:8px;
+      font-weight:600;
+      text-align:center;
+      transition:transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .skills li:hover, .hobbies li:hover, .goals li:hover{
+      transform:scale(1.05);
+      box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .contact p{
+      text-align:center;
+    }
+    .contact a{
+      color:var(--blue);
+      text-decoration:none;
+      font-weight:600;
+    }
+    .contact a:hover{color:var(--orange)}
+
+    footer{
+      text-align:center;
+      padding:20px 0;
+      color:var(--muted);
+      font-size:14px;
+      margin-top:40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Xin chào, tôi là Nguyễn Trung Kiên 👋</h1>
+    <p>Nhà phát triển web & Nhà thiết kế sáng tạo</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <img src="0J7A9935.jpg" alt="Ảnh cá nhân">
+      <div class="intro-text">
+        <h2>Giới thiệu ngắn gọn</h2>
+        <p>Tôi là Nguyễn Trung Kiên, sinh năm 2007. Tôi là một sinh viên web đam mê sáng tạo, 
+          thích xây dựng các trang web thân thiện và hiện đại. 
+          Màu xanh nước biển tượng trưng cho sự tin cậy và cam đại diện cho nhiệt huyết 
+          — hai điều tôi luôn mang theo trong công việc.</p>
+      </div>
+    </section>
+
+    <section class="personal-info">
+      <h3>Thông tin cá nhân</h3>
+      <p><strong>Họ và tên:</strong> Nguyễn Trung Kiên</p>
+      <p><strong>Năm sinh:</strong> 2007</p>
+      <p><strong>Quê quán:</strong> Hải Phòng, Việt Nam</p>
+    </section>
+
+    <section class="skills">
+      <h3>Kĩ năng nổi bật</h3>
+      <ul>
+        <li>HTML cơ bản</li>
+        <li>Biết cách nhúng CSS</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
+
+    <section class="hobbies">
+      <h3>Sở thích</h3>
+      <ul>
+        <li>Đọc sách công nghệ</li>
+        <li>Nghe nhạc khi làm việc</li>
+        <li>Du lịch khám phá văn hoá mới</li>
+        <li>Viết blog chia sẻ kiến thức</li>
+        <li>Đá bóng & Bóng chuyền</li>
+      </ul>
+    </section>
+
+    <section class="goals">
+      <h3>Mục tiêu cá nhân</h3>
+      <ul>
+        <li>Trở thành sinh viên loại giỏi</li>
+        <li>Nắm vững HTML cơ bản</li>
+        <li>Thành thạo nhúng CSS</li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h3>Liên hệ</h3>
+      <p>Email: <a href="mailto:trk612007@gmail.com">trk612007@gmail.com</a></p>
+      <p>SĐT: <a href="#">0392079161</a></p>
+     <p>Facebook: <a href="https://www.facebook.com/trung.kien.735561/?locale=vi_VN"
+     target="_blank">https://www.facebook.com/trung.kien.735561</p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Nguyễn Trung Kiên — Thiết kế bằng HTML & CSS
+  </footer>
+</body>
+</html>
